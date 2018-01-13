@@ -2,6 +2,8 @@ PATH
   remote: .
   specs:
     gtrand (0.1.0)
+      httparty
+      pry
 
 GEM
   remote: https://rubygems.org/
@@ -22,8 +24,6 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   gtrand!
-  httparty
-  pry
   rake (~> 10.0)
 
 BUNDLED WITH

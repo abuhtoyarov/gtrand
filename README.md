@@ -22,7 +22,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+    client = Gtrand::Client.new(keyword: params[:keyword], hl: 'en', date: 'now+1-d')
+    client.interest_over_time
+```
 
 ## Development
 

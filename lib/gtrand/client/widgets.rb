@@ -16,6 +16,8 @@ module Gtrand
         hl = options.delete(:hl) || 'en'
         tz = options.delete(:tz) || '-180'
         date = options.delete(:date) || 'now 1-d'
+        property = options.delete(:property) || ''
+        category = options.delete(:category) || 0
 
         data = {
           hl: hl,
@@ -28,8 +30,8 @@ module Gtrand
                 time: date
               }
             ],
-            category: 0,
-            property: ''
+            category: category,
+            property: property
           }.to_json
         }
         options.merge(data)
